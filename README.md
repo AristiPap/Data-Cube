@@ -11,12 +11,16 @@ This is a descriptive guide on how to create data cubes with measures,calculatio
 
 ```bash
 ~$ git clone https://github.com/AristiPap/BigData-Cubes-Tutorial
+
 The links to download the previous prerequisities:
+
 > Visual Studio
 https://visualstudio.microsoft.com/
+
 >SQL Server and SQL Server Management Studio 
 https://www.microsoft.com/en-us/sql-server/sql-server-downloads 
 https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15 
+
 > AdventureWorks
 https://docs.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver15&tabs=ssms
 ```
