@@ -1,4 +1,4 @@
-# BigData-Cubes-Tutorial
+# BigData-Cubes
 
 This is a descriptive guide on how to create data cubes with measures,calculations,KPI's and many different characteristics from scratch.
 
