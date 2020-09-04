@@ -6,10 +6,6 @@ This is a descriptive guide on how to create data cubes with measures,calculatio
 -	Visual Studio 2019 (works fine if you already have visual studio 2017)
 -	SQL Server Management Studio
 -	AdventureWorks 2019 (or 2017 according to the version you have downloaded for the previous 2)
-```bash
-~$ sudo apt update && sudo apt upgrade
-~$ sudo apt-get install gcc make valgrind
-```
 
 ## Download 
 
