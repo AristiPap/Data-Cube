@@ -1,6 +1,6 @@
 # BigData-Cubes
 
-This is a descriptive guide on how to create data cubes with measures,calculations,KPI's and many different characteristics from scratch.
+Implementation of a data cube with measures,calculations,KPI's and many different characteristics from scratch.
 
 ## Prerequisites
 -	Visual Studio 2019 (works fine if you already have visual studio 2017)
@@ -13,8 +13,7 @@ The data cube is used to represent data (sometimes called facts) along some meas
 
 Here I preesnt you with the solution of a basic cube made with facts from the AdventureWorks database of Microsoft where 
 I have created all the features described in the above textfiles.
-Finally I composed a descriptive guide on how to setup all the needed tools and all the steps to create your cube and it's
-features!
+Finally I composed a descriptive guide on how to setup all the needed tools to get you started on creating your own datacube.
 
 ## Download 
 
