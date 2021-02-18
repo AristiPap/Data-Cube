@@ -3,7 +3,7 @@
     <DataSources>
       <DataSource>
         <ID>dsAdventureWorks</ID>
-        <ConnectionString>Provider=SQLNCLI11.1;Data Source=DESKTOP-3J88EQ1\MSQLSERVER;Integrated Security=SSPI;Initial Catalog=AdventureWorks2019</ConnectionString>
+        <ConnectionString>Provider=SQLNCLI11.1;Data Source=(insert your sql server account id eg: DESKTOP123\MSQLSERVER);Integrated Security=SSPI;Initial Catalog=AdventureWorks2019</ConnectionString>
         <ImpersonationInfo>
           <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">ImpersonateCurrentUser</ImpersonationMode>
           <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Unchanged</ImpersonationInfoSecurity>
