@@ -1,0 +1,985 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="a1e34cb2-36cf-46f3-8409-2306a43baede" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>myCube</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Customer</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="f0ab4240-271a-46a7-a73a-dd9a6e7b0089">
+          <ID>Customer</ID>
+          <Name>Customer</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="7fd303ce-ac94-41ee-be63-3c88a1453283">
+            <DataSourceViewID>dsvAdventureWorks1</DataSourceViewID>
+            <TableID>Sales_Customer</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>AW Build Version</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="7f69b850-3b58-43d7-8ec0-5baf5a4e047f">
+          <ID>AW Build Version</ID>
+          <Name>AW Build Version</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="50e706d2-2d00-4169-91c8-1fa60de11641">
+            <DataSourceViewID>dsvAdventureWorks1</DataSourceViewID>
+            <TableID>dbo_AWBuildVersion</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Bill Of Materials</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="b82a3e4e-5400-45cc-b4de-4d9d10445793">
+          <ID>Bill Of Materials</ID>
+          <Name>Bill Of Materials</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="ac033a9e-b82b-4a2d-a484-2366cda87776">
+            <DataSourceViewID>dsvAdventureWorks1</DataSourceViewID>
+            <TableID>Production_BillOfMaterials</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Business Entity Address</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="c5f9e931-2b94-4808-b9ab-064a560aa62b">
+          <ID>Business Entity Address</ID>
+          <Name>Business Entity Address</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="d59d5154-acad-472e-a314-ca18a7af8ea0">
+            <DataSourceViewID>dsvAdventureWorks1</DataSourceViewID>
+            <TableID>Person_BusinessEntityAddress</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Business Entity Contact</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="de087718-523f-4f3a-9a30-53bd34eaa8b0">
+          <ID>Business Entity Contact</ID>
+          <Name>Business Entity Contact</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="47cbb24f-efd3-4791-8ea8-809f7c0a5ce8">
+            <DataSourceViewID>dsvAdventureWorks1</DataSourceViewID>
+            <TableID>Person_BusinessEntityContact</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Country Region Currency</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="4113e0d1-5715-4463-b99d-ae2fead1dc3d">
+          <ID>Country Region Currency</ID>
+          <Name>Country Region Currency</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="a658398f-5a32-4e59-b62c-ffe13ab3ee30">
+            <DataSourceViewID>dsvAdventureWorks1</DataSourceViewID>
+            <TableID>Sales_CountryRegionCurrency</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Currency Rate</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="d3606cf3-e933-4319-85ed-da6f87856333">
+          <ID>Currency Rate</ID>
+          <Name>Currency Rate</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="d673651c-e4a1-42ad-9f69-c38fe5ec370b">
+            <DataSourceViewID>dsvAdventureWorks1</DataSourceViewID>
+            <TableID>Sales_CurrencyRate</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Database Log</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="4de90042-e3b1-4463-aeb2-b986d2b789e4">
+          <ID>Database Log</ID>
+          <Name>Database Log</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="d4959164-72d3-48fb-b016-34720da9cf19">
+            <DataSourceViewID>dsvAdventureWorks1</DataSourceViewID>
+            <TableID>dbo_DatabaseLog</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Email Address</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="f4e599b7-e223-43fb-a2c5-9b9a6737153e">
+          <ID>Email Address</ID>
+          <Name>Email Address</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="cbd84a27-3575-4b42-9e98-fb2638219ee5">
+            <DataSourceViewID>dsvAdventureWorks1</DataSourceViewID>
+            <TableID>Person_EmailAddress</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Employee Department History</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="31cc7277-b675-4d00-b9bc-df546ab701be">
+          <ID>Employee Department History</ID>
+          <Name>Employee Department History</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="92f26e76-1c0e-4b70-9be2-302f44fd0d3a">
+            <DataSourceViewID>dsvAdventureWorks1</DataSourceViewID>
+            <TableID>HumanResources_EmployeeDepartmentHistory</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Employee Pay History</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="9e312087-fdb8-44d0-a1c5-454b8f1af5fa">
+          <ID>Employee Pay History</ID>
+          <Name>Employee Pay History</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="59f928d7-132e-45e9-88ac-105c42c6c3c7">
+            <DataSourceViewID>dsvAdventureWorks1</DataSourceViewID>
+            <TableID>HumanResources_EmployeePayHistory</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Error Log</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="384be8dc-e1d9-4c4b-8734-b816e3d9e68e">
+          <ID>Error Log</ID>
+          <Name>Error Log</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="99d32103-bf35-449f-bcee-5cb82558af0e">
+            <DataSourceViewID>dsvAdventureWorks1</DataSourceViewID>
+            <TableID>dbo_ErrorLog</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Job Candidate</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="ad0420f8-82b5-434f-8365-ac1628bd1bfa">
+          <ID>Job Candidate</ID>
+          <Name>Job Candidate</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="81727519-ec97-4aec-b86f-ab8bf95f3c19">
+            <DataSourceViewID>dsvAdventureWorks1</DataSourceViewID>
+            <TableID>HumanResources_JobCandidate</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Password</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="c026caf5-fd7e-41b1-b8bb-2b133826b741">
+          <ID>Password</ID>
+          <Name>Password</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="735c0900-70f1-43e2-bb5f-b90706774977">
+            <DataSourceViewID>dsvAdventureWorks1</DataSourceViewID>
+            <TableID>Person_Password</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Person Credit Card</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="a44bf2c2-218d-4710-8bd2-1dddedb7ecfa">
+          <ID>Person Credit Card</ID>
+          <Name>Person Credit Card</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="0137748d-a4ac-446d-9973-68726172f9f2">
+            <DataSourceViewID>dsvAdventureWorks1</DataSourceViewID>
+            <TableID>Sales_PersonCreditCard</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Person Phone</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="79b799b5-215c-4e52-968d-751e6a786391">
+          <ID>Person Phone</ID>
+          <Name>Person Phone</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="25fe510d-dac4-49db-8699-4c4310ef84e3">
+            <DataSourceViewID>dsvAdventureWorks1</DataSourceViewID>
+            <TableID>Person_PersonPhone</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Product Cost History</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="2ec7c397-2ac1-4529-8d0b-88be66d3cc7b">
+          <ID>Product Cost History</ID>
+          <Name>Product Cost History</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="9716cec6-a086-400e-b8bd-589a99554ca6">
+            <DataSourceViewID>dsvAdventureWorks1</DataSourceViewID>
+            <TableID>Production_ProductCostHistory</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Product Document</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="0de4623e-fb5e-4cec-a8e0-f4e66c66063a">
+          <ID>Product Document</ID>
+          <Name>Product Document</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="5081fff4-d7be-4bcc-8b75-69a14cf8e178">
+            <DataSourceViewID>dsvAdventureWorks1</DataSourceViewID>
+            <TableID>Production_ProductDocument</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Product Inventory</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="b408575d-0519-46be-b09b-d8269e39f0be">
+          <ID>Product Inventory</ID>
+          <Name>Product Inventory</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="92b99d6b-e0e5-4bcc-8360-a441432f9b18">
+            <DataSourceViewID>dsvAdventureWorks1</DataSourceViewID>
+            <TableID>Production_ProductInventory</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Product List Price History</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="b036995d-5345-459e-8b56-93a54ace38cf">
+          <ID>Product List Price History</ID>
+          <Name>Product List Price History</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="abd48036-a4ef-400a-b1a4-98f96e7ac512">
+            <DataSourceViewID>dsvAdventureWorks1</DataSourceViewID>
+            <TableID>Production_ProductListPriceHistory</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Product Model Illustration</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="0304e135-d008-4c06-b672-cbbdf4ef62dc">
+          <ID>Product Model Illustration</ID>
+          <Name>Product Model Illustration</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="c280fc36-4bc1-4a14-a290-03b8aa57059e">
+            <DataSourceViewID>dsvAdventureWorks1</DataSourceViewID>
+            <TableID>Production_ProductModelIllustration</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Product Model Product Description Culture</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="c3c88b4e-34d0-464f-8e87-c2c8acf7e56a">
+          <ID>Product Model Product Description Culture</ID>
+          <Name>Product Model Product Description Culture</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="0b3f71f6-9ad9-433b-a2c6-8366d981a687">
+            <DataSourceViewID>dsvAdventureWorks1</DataSourceViewID>
+            <TableID>Production_ProductModelProductDescriptionCulture</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Product Product Photo</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="4111609d-d6be-4bd8-bf56-15dfd81d9d2e">
+          <ID>Product Product Photo</ID>
+          <Name>Product Product Photo</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="28673e29-a155-4995-84e3-99ace69b4b46">
+            <DataSourceViewID>dsvAdventureWorks1</DataSourceViewID>
+            <TableID>Production_ProductProductPhoto</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Product Review</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="d0d7445d-3f8d-4ff5-86d9-2cc600097dfd">
+          <ID>Product Review</ID>
+          <Name>Product Review</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="d472a748-b5f6-42d8-97fc-e33d8189cb61">
+            <DataSourceViewID>dsvAdventureWorks1</DataSourceViewID>
+            <TableID>Production_ProductReview</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Product Vendor</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="ae658edb-2ed5-47fd-924c-49f7a779a4ce">
+          <ID>Product Vendor</ID>
+          <Name>Product Vendor</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="f1b7076a-f46c-47d5-9fda-4b255719f456">
+            <DataSourceViewID>dsvAdventureWorks1</DataSourceViewID>
+            <TableID>Purchasing_ProductVendor</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Purchase Order Detail</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="3e79f004-b630-4314-aa00-ab172da2025f">
+          <ID>Purchase Order Detail</ID>
+          <Name>Purchase Order Detail</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="023b3292-7974-47b2-bd13-e3f88edbc611">
+            <DataSourceViewID>dsvAdventureWorks1</DataSourceViewID>
+            <TableID>Purchasing_PurchaseOrderDetail</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Purchase Order Header</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="e35ec2f8-3b5d-4cf9-98c4-011c130865f7">
+          <ID>Purchase Order Header</ID>
+          <Name>Purchase Order Header</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="b1140b10-65e0-4af7-a00d-82296608acbd">
+            <DataSourceViewID>dsvAdventureWorks1</DataSourceViewID>
+            <TableID>Purchasing_PurchaseOrderHeader</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Sales Order Detail</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="5728971e-7e42-40d4-9dc6-59c568c42033">
+          <ID>Sales Order Detail</ID>
+          <Name>Sales Order Detail</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="e789c072-246a-48f0-b09a-1550e51b2c5b">
+            <DataSourceViewID>dsvAdventureWorks1</DataSourceViewID>
+            <TableID>Sales_SalesOrderDetail</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Sales Order Header</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="d37f08f9-7eec-49d9-ac6e-4e4d0c39d80a">
+          <ID>Sales Order Header</ID>
+          <Name>Sales Order Header</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="c4fcf90a-0a28-4242-854d-8b59fe2eb000">
+            <DataSourceViewID>dsvAdventureWorks1</DataSourceViewID>
+            <TableID>Sales_SalesOrderHeader</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Sales Order Header Sales Reason</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="b3504c92-f265-44b5-8e4c-d0f7d9af3c9d">
+          <ID>Sales Order Header Sales Reason</ID>
+          <Name>Sales Order Header Sales Reason</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="85b8256c-3f1c-4836-8dde-92f777251e75">
+            <DataSourceViewID>dsvAdventureWorks1</DataSourceViewID>
+            <TableID>Sales_SalesOrderHeaderSalesReason</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Sales Person Quota History</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="6e1da204-31a0-4467-bebd-234761b93bec">
+          <ID>Sales Person Quota History</ID>
+          <Name>Sales Person Quota History</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="adacebd1-a644-4079-b49d-4d5dc261bf5c">
+            <DataSourceViewID>dsvAdventureWorks1</DataSourceViewID>
+            <TableID>Sales_SalesPersonQuotaHistory</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Sales Tax Rate</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="2c9ac93e-9a4a-4b97-a529-1ed6fce56816">
+          <ID>Sales Tax Rate</ID>
+          <Name>Sales Tax Rate</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="233b7064-0b55-43b0-b51e-d3b110d27ab1">
+            <DataSourceViewID>dsvAdventureWorks1</DataSourceViewID>
+            <TableID>Sales_SalesTaxRate</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Sales Territory History</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="e7e66d5d-89e3-484e-bc9c-edd9932df370">
+          <ID>Sales Territory History</ID>
+          <Name>Sales Territory History</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="933e3930-3988-400e-b242-a1c481b8497d">
+            <DataSourceViewID>dsvAdventureWorks1</DataSourceViewID>
+            <TableID>Sales_SalesTerritoryHistory</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Shift</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="79c42e56-483b-402a-aa2f-f46bb16937d6">
+          <ID>Shift</ID>
+          <Name>Shift</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="93702fb8-d9d5-49de-a94d-48494f1aa99a">
+            <DataSourceViewID>dsvAdventureWorks1</DataSourceViewID>
+            <TableID>HumanResources_Shift</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Shopping Cart Item</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="22c8e48c-f53f-4abb-95ff-943db8d6b85f">
+          <ID>Shopping Cart Item</ID>
+          <Name>Shopping Cart Item</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="0757f251-e0b2-406e-a319-2196ea94809e">
+            <DataSourceViewID>dsvAdventureWorks1</DataSourceViewID>
+            <TableID>Sales_ShoppingCartItem</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Special Offer Product</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="bf47a4fb-4c04-4051-bc5b-2ce5838251c9">
+          <ID>Special Offer Product</ID>
+          <Name>Special Offer Product</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="89a2428c-0597-4f58-aa54-64cd117c2182">
+            <DataSourceViewID>dsvAdventureWorks1</DataSourceViewID>
+            <TableID>Sales_SpecialOfferProduct</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Transaction History</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="94f8c90c-84fe-4699-949b-3b08dd225699">
+          <ID>Transaction History</ID>
+          <Name>Transaction History</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="1b65bb55-fea2-4c38-b3d7-c4e142599d9b">
+            <DataSourceViewID>dsvAdventureWorks1</DataSourceViewID>
+            <TableID>Production_TransactionHistory</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Transaction History Archive</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="9395cbed-9ba7-49b6-83a6-a0be75f873ce">
+          <ID>Transaction History Archive</ID>
+          <Name>Transaction History Archive</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="ec98dfc1-0946-4331-8444-11d4ac47e57d">
+            <DataSourceViewID>dsvAdventureWorks1</DataSourceViewID>
+            <TableID>Production_TransactionHistoryArchive</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Work Order</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="52981d1b-153e-4ad2-a8fa-90c4bada8b71">
+          <ID>Work Order</ID>
+          <Name>Work Order</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="438998ad-d5b8-4d4f-a8b3-8ebccd000445">
+            <DataSourceViewID>dsvAdventureWorks1</DataSourceViewID>
+            <TableID>Production_WorkOrder</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Work Order Routing</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="dd448e74-983a-462d-9ef2-f61c87315443">
+          <ID>Work Order Routing</ID>
+          <Name>Work Order Routing</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="8ee31ac6-a0e2-4da6-8354-bc9320e7a615">
+            <DataSourceViewID>dsvAdventureWorks1</DataSourceViewID>
+            <TableID>Production_WorkOrderRouting</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>v Additional Contact Info</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="3db68d8c-e240-4c9f-8e3a-bdba75449adc">
+          <ID>v Additional Contact Info</ID>
+          <Name>v Additional Contact Info</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="90cbefe0-33a2-4b1d-8533-60ba30a7071b">
+            <DataSourceViewID>dsvAdventureWorks1</DataSourceViewID>
+            <TableID>Person_vAdditionalContactInfo</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>v Job Candidate</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="94bc91e3-c36d-4b39-ad45-64838718b0ff">
+          <ID>v Job Candidate</ID>
+          <Name>v Job Candidate</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="7195fc4a-b280-4076-bcdf-a26fdb01fdda">
+            <DataSourceViewID>dsvAdventureWorks1</DataSourceViewID>
+            <TableID>HumanResources_vJobCandidate</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>v Job Candidate Education</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="fdaae509-7bb0-4420-a960-3b5a9714d04c">
+          <ID>v Job Candidate Education</ID>
+          <Name>v Job Candidate Education</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="839a7744-b535-4047-86da-77b6678b3add">
+            <DataSourceViewID>dsvAdventureWorks1</DataSourceViewID>
+            <TableID>HumanResources_vJobCandidateEducation</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>v Job Candidate Employment</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="2c9e799b-0368-4211-89df-b5b234a76e2d">
+          <ID>v Job Candidate Employment</ID>
+          <Name>v Job Candidate Employment</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="895a3a65-2cc7-4a51-8d02-73df8445beb7">
+            <DataSourceViewID>dsvAdventureWorks1</DataSourceViewID>
+            <TableID>HumanResources_vJobCandidateEmployment</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>v Person Demographics</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="c4be7175-10f7-4e90-9fcd-a17939617f3d">
+          <ID>v Person Demographics</ID>
+          <Name>v Person Demographics</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="accc3982-86d2-4c81-8d3c-87f00a233a2a">
+            <DataSourceViewID>dsvAdventureWorks1</DataSourceViewID>
+            <TableID>Sales_vPersonDemographics</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>v Product Model Catalog Description</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="2a29e85e-4887-4f8c-b16d-e37da50639bc">
+          <ID>v Product Model Catalog Description</ID>
+          <Name>v Product Model Catalog Description</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="2776c1e3-c5c0-4475-883c-70550c17d162">
+            <DataSourceViewID>dsvAdventureWorks1</DataSourceViewID>
+            <TableID>Production_vProductModelCatalogDescription</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>v Product Model Instructions</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="a14394a4-a79f-447e-a7a7-1941c82cf8d5">
+          <ID>v Product Model Instructions</ID>
+          <Name>v Product Model Instructions</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="4ee911a2-d0b8-447f-bdd4-70ebbb67f78a">
+            <DataSourceViewID>dsvAdventureWorks1</DataSourceViewID>
+            <TableID>Production_vProductModelInstructions</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>v State Province Country Region</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="0b58cd69-97dd-4371-b3c3-7a0692ee5579">
+          <ID>v State Province Country Region</ID>
+          <Name>v State Province Country Region</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="ada58af7-ce8f-4f0c-be74-1235e61eeb06">
+            <DataSourceViewID>dsvAdventureWorks1</DataSourceViewID>
+            <TableID>Person_vStateProvinceCountryRegion</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>v Store With Demographics</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="ad97053d-bc67-4bff-9ebf-81370c0f7066">
+          <ID>v Store With Demographics</ID>
+          <Name>v Store With Demographics</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="0b5b0f1a-26f5-402b-a4d4-3ddc9b71d04b">
+            <DataSourceViewID>dsvAdventureWorks1</DataSourceViewID>
+            <TableID>Sales_vStoreWithDemographics</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>
