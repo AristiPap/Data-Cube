@@ -14,7 +14,7 @@ The data cube is used to represent data (sometimes called facts) along some meas
 Here I preesnt you with the solution of a basic cube made with facts from the AdventureWorks database of Microsoft where 
 I have created all the features described in the above textfiles.
 Finally I composed a descriptive guide on how to setup all the needed tools to get you started on creating your own datacube.
-
+!! Remember to change in each file the datasource connectivity information with yours. In some of the files I have written a message to indicate what you have to change.!!
 ## Download 
 
 ```bash
