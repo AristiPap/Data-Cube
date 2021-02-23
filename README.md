@@ -19,7 +19,7 @@ Finally I composed a descriptive guide on how to setup all the needed tools to g
 ## Download 
 
 ```bash
-~$ git clone https://github.com/AristiPap/BigData-Cubes-Tutorial
+~$ git clone https://github.com/AristiPap/Data-Cube
 
 The links to download the previous prerequisities:
 
